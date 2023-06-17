@@ -11,7 +11,8 @@ export default {
         'lpink' : '#f2b3ca',
         'dpink' : '#a67b8a',
         'dblack' : '#262423',
-        'dgray' : '#8c8c8c'
+        'dgray' : '#8c8c8c',
+        'npink' : '#ff85ae'
       },
 
       fontFamily: {

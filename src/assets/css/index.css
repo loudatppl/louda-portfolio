@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body {
-    background-color: #f2b3ca;
+    background: #ff85ae;
+    background-image: url('../images/noise.svg');
+    height: 100vh;
 }
 
 @font-face {
