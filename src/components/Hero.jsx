@@ -7,7 +7,8 @@ const Hero = () => {
   return (
     <section
         id='home'
-        className='w-full relative mt-2 mb-20'
+        className='w-full relative mt-2 md:mb-20
+        mb-60'
     >
         <div
             className='md:w-[50%] w-[80%]'
