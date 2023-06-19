@@ -6,7 +6,7 @@ const About = () => {
         id='about'
         className='md:px-20 md:py-20
         px-10 py-20 flex flex-col space-y-20
-        text-dblack'
+        text-dblack bg-sand'
     >
         <div
             className='flex justify-between'
@@ -74,7 +74,7 @@ const About = () => {
                     className='pl-10 font-open flex justify-between'
                 >
                     <div>
-                        <h3 className='text-xl mb-6 font-ppbold'>FRONT-END</h3>
+                        <h3 className='text-xl mb-6 font-oswald'>FRONT-END</h3>
                         <ul className=' space-y-2 text-base'>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -86,7 +86,7 @@ const About = () => {
                     <div
                         className='flex flex-col'
                     >
-                        <h3 className='text-xl mb-6 font-ppbold'>BACK-END</h3>
+                        <h3 className='text-xl mb-6 font-oswald'>BACK-END</h3>
                         <ul className='space-y-2 text-base'>
                             <li>NODE.JS</li>
                             <li>EXPRESS.JS</li>
@@ -117,12 +117,12 @@ const About = () => {
                     className='pl-10 font-open'
                 >
                     <h3
-                        className='text-xl font-ppbold'
+                        className='text-xl font-oswald'
                     >
                         Uplift Code Camp
                     </h3>
                     <p
-                        className='text-sm text-ppbook
+                        className='text-sm font-open
                         mb-4'
                     >
                         January 2023 - June 2023
