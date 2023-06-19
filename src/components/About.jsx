@@ -16,8 +16,8 @@ const About = () => {
                 w-full'
             >
                 <h2
-                    className='md:text-4xl font-oswald
-                    text-dblack text-2xl'
+                    className='text-4xl font-oswald
+                    text-dblack'
                 >
                     about me
                 </h2>
@@ -65,8 +65,8 @@ const About = () => {
                 className='space-y-10 md:w-[50%] w-full'
             >
                 <h2
-                    className='md:text-4xl font-oswald
-                    text-dblack text-2xl'
+                    className='text-4xl font-oswald
+                    text-dblack'
                 >
                     my skills
                 </h2>
@@ -109,8 +109,7 @@ const About = () => {
                 w-full'
             >
                 <h2
-                    className='md:text-4xl font-oswald
-                    text-2xl'
+                    className='text-4xl font-oswald'
                 >
                     my experience
                 </h2>
