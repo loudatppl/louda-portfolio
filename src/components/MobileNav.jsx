@@ -81,7 +81,7 @@ const MobileNav = () => {
                     >
                         <ul
                             className='font-oswald space-y-4
-                            text-4xl'
+                            text-xl'
                         >
                             <li>
                                 <a href="/">HOME</a>
