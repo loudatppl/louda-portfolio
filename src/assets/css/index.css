@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
-    background: #ff85ae;
-    background-image: url('../images/noise.svg');
-    height: 100vh;
+    background: #F8F2E9;
+    /* background-image: url('../images/noise.svg');
+    height: 100vh; */
+    padding: 0;
+    margin: 0;
 }
 
-@font-face {
-    font-family: 'BLOND';
-    src: url('../fonts/blonde.otf');
-}
-
-@font-face {
-    font-family: 'PP-NEUE-MONTREAL-MEDIUM';
-    src: url('../fonts/PPNeueMontreal-Medium.otf');
-}
-
-@font-face {
-    font-family: 'PP-NEUE-MONTREAL-THIN';
-    src: url('../fonts/PPNeueMontreal-Thin.otf');
-}
 
 @font-face {
     font-family: 'PP-NEUE-MONTREAL-BOOK';
@@ -34,11 +23,17 @@ body {
 }
 
 @font-face {
-    font-family: 'IGOR';
-    src: url('../fonts/IGOR-BoldItalic.ttf');
+    font-family: 'BLOND';
+    src: url('../fonts/blonde.otf');
 }
 
 @font-face {
-    font-family: 'COURIER';
-    src: url('../fonts/CourierPrime-Regular.ttf');
+    font-family: 'OSWALD';
+    src: url('../fonts/Oswald-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'OPEN-SANS';
+    src: url('../fonts/OpenSans-Light.ttf');
+}
+

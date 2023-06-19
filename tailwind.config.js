@@ -8,21 +8,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        'lpink' : '#f2b3ca',
-        'dpink' : '#a67b8a',
-        'dblack' : '#262423',
-        'dgray' : '#8c8c8c',
-        'npink' : '#ff85ae'
+        'beige' : '#F8F2E9',
+        'sand' : '#E4DCCB',
+        'taupe' : '#A89985',
+        'mocha' : '#7E685C',
+        'dbrown' : '#4F3B31',
+        'dblack' : '#1a1a1a'
       },
 
       fontFamily: {
-        'blond' : 'BLOND',
-        'igor' : 'IGOR',
-        'ppthin' : 'PP-NEUE-MONTREAL-THIN',
-        'ppmed' : 'PP-NEUE-MONTREAL-MEDIUM',
         'ppbook' : 'PP-NEUE-MONTREAL-BOOK',
         'ppbold' : 'PP-NEUE-MONTREAL-BOLD',
-        'courier' : 'COURIER'
+        'blond' : 'BLOND',
+        'oswald' : 'OSWALD',
+        'open' : 'OPEN-SANS'
       }
     },
   },

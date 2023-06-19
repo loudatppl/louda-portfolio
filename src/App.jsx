@@ -1,11 +1,16 @@
 import React from 'react'
 
-import Portfolio from './pages/Portfolio'
+import Nav from './components/Nav'
+import Hero from './components/Hero'
+import About from './components/About'
+
 
 const App = () => {
   return (
     <>
-      <Portfolio />
+      <Nav />
+      <Hero />
+      <About />
     </>
   )
 }
