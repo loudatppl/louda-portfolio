@@ -8,7 +8,7 @@ const Hero = () => {
     <section
         id='home'
         className='w-full relative mt-0 text-dblack
-        mb-20'
+        md:mb-20 mb-72'
     >
         <div
             className='md:w-[50%] w-[80%]'
