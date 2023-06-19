@@ -11,6 +11,10 @@ body {
     margin: 0;
 }
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 
 @font-face {
     font-family: 'PP-NEUE-MONTREAL-BOLD';

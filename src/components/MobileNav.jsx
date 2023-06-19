@@ -1,11 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { motion, AnimatePresence } from 'framer-motion'
+
+import { AiOutlineGithub } from 'react-icons/ai'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 
 const MobileNav = () => {
     const [clicked, setClicked] = useState( false )
 
+    useEffect( () => {
+      if ( clicked ) {
+        document.body.classList.add('overflow-hidden')
+      } else {
+        document.body.classList.remove('overflow-hidden')
+      }
+    }, [clicked])
+  
     const handleMenuClick = () => {
         setClicked( !clicked )
     }
@@ -16,7 +27,8 @@ const MobileNav = () => {
                 <motion.button
                     className='flex items-center
                     cursor-pointer flex-col md:hidden
-                    z-[9999]'
+                    z-[9999] fixed top-0 right-0 mr-10
+                    mt-6'
                     onClick={ handleMenuClick }
                     >
                     {clicked ? (
@@ -60,100 +72,98 @@ const MobileNav = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 1000}}
                     transition={{ ease: 'easeIn', duration: 0.3 }} 
-                    className='fixed w-full h-screen flex
-                    flex-col justify-end bg-oxford
-                    pb-6 bottom-0 left-0 px-6
-                    inset-0 pt-20 md:hidden z-[999] bg-beige'
+                    className='fixed top-0 left-0 bottom-0 right-0
+                    bg-beige z-[999] md:hidden text-dblack'
                 >
-                    <div 
-                        className='mb-8'
+                    <div
+                        className='flex items-start justify-center
+                        px-10 flex-col space-y-10 h-screen'
                     >
                         <ul
-                        className='text-off-white
-                        font-ppbook text-2xl space-y-6'
+                            className='font-oswald space-y-4
+                            text-4xl'
                         >
                             <li>
-                                <a href="#" onClick={handleMenuClick}>HOME</a>
+                                <a href="/">HOME</a>
                             </li>
                             <li>
-                                <a href="#about" onClick={handleMenuClick}>ABOUT</a>
+                                <a href="#about">ABOUT</a>
                             </li>
                             <li>
-                                <a href="#projects" onClick={handleMenuClick}>PROJECTS</a>
+                                <a href="#project">PROJECT</a>
                             </li>
-                        </ul>          
-                    </div>
-                    <motion.div
-                        initial={{ scaleX: 0, transformOrigin: '0%' }} 
-                        animate={{ scaleX: 1 }}
-                        transition={{ duration: 0.8 }}
-                        className='bg-dblack w-auto h-[1px]
-                        relative'
-                    >
+                            <li>
+                                <a href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
 
-                    </motion.div>
-                    <footer
-                        className='grid grid-cols-3 w-full mt-8'
-                    >
+                        <div className='h-[1px] w-full bg-dblack'></div>
+
                         <div
-                        className='col-span-2'
+                            className='flex flex-col space-y-4'
                         >
-                            <h3
-                                className='text-xs text-off-white
-                                font-ppbook'
+                            <div
+                                className='flex flex-col font-open
+                                space-y-2'
                             >
-                                WHERE I WORK
-                            </h3>
-                            <p
-                                className='text-base text-off-white
-                                font-ppbook mt-2'
-                            >Manila, Philippines</p>
-                        <div className=' mt-6'>
-                        <h3
-                            className='text-xs text-off-white
-                            font-ppbook mt-4'
+                                <h3
+                                    className='text-lg'
+                                >
+                                    PHONE
+                                </h3>
+                                <p
+                                    className='text-base'
+                                >   
+                                    <u>+63 956 473 7776</u>
+                                </p>
+                            </div>
+                            <div
+                                className='flex flex-col font-open
+                                space-y-2'
+                            >
+                                <h3
+                                    className='text-lg'
+                                >
+                                    EMAIL
+                                </h3>
+                                <p
+                                    className='text-base'
+                                >   
+                                    <u>tuppalloudakrisa@gmail.com</u>
+                                </p>
+                            </div>
+                            <div
+                                className='flex flex-col font-open
+                                space-y-2'
+                            >
+                                <h3
+                                    className='text-lg'
+                                >
+                                    WHERE I WORK
+                                </h3>
+                                <p
+                                    className='text-base'
+                                >   
+                                    MANILA, PHILIPPINES
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='h-[1px] w-full bg-dblack'></div>
+                        
+                        <div
+                            className='space-x-4
+                            justify-center flex w-full'
                         >
-                            PHONE
-                        </h3>
-                            <p
-                            className='text-base text-off-white
-                            font-ppbook mt-2'
-                            >
-                            <u>+63 956 473 7776</u>
-                            </p>
+                            <a href="">
+                                <AiOutlineGithub size={28} />
+                            </a>
+                            <a href="">
+                                <FaLinkedinIn size={28} />
+                            </a>
                         </div>
-                        <div className='mt-6'>
-                            <h3
-                            className='text-xs text-off-white
-                            font-ppbook mt-4'
-                            >
-                            GET IN TOUCH
-                            </h3>
-                            <p
-                                className='text-base text-off-white
-                                font-ppbook mt-2'
-                            >
-                                <u>tuppalloudakrisa@gmail.com</u>
-                            </p>
-                        </div>
-                        </div>
-                        <div className='flex justify-center items-end'>
-                            <ul 
-                            className='text-off-white
-                            font-ppbook text-sm space-y-2'
-                            >
-                            <li>
-                                <a href="https://github.com/loudatppl">GitHub</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/loudakris-tuppal-79b333258/">LinkedIn</a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/loudatppl">Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </footer>
+                    </div>
+                  
                 </motion.div>
                 )}
             </AnimatePresence>

@@ -7,12 +7,12 @@ const Nav = () => {
       className='flex top-0
       left-0 right-0 md:px-20 md:py-6
       justify-between items-center px-10
-      py-4 md:mb-20 mb-40'
+      py-4 md:mb-20 mb-36 relative'
     >
       <a 
         href="/"
         className='font-blond text-dblack
-        text-xl'
+        text-xl z-[9999]'
       >
         louda
       </a>
@@ -35,7 +35,6 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      <MobileNav />
     </nav>
   )
 }
