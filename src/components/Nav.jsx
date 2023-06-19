@@ -6,7 +6,7 @@ const Nav = () => {
       className='flex top-0
       left-0 right-0 md:px-20 md:py-6
       justify-between items-center px-10
-      py-4'
+      py-4 mb-20'
     >
       <a 
         href="/"
