@@ -16,7 +16,7 @@ const Hero = () => {
             <img 
                 src={whiteFerrari} 
                 alt="White Ferrari" 
-                className='w-full'
+                className='w-full h-full'
             />
 
         </div>

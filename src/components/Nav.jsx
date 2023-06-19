@@ -1,4 +1,5 @@
 import React from 'react'
+import MobileNav from './MobileNav'
 
 const Nav = () => {
   return (
@@ -6,7 +7,7 @@ const Nav = () => {
       className='flex top-0
       left-0 right-0 md:px-20 md:py-6
       justify-between items-center px-10
-      py-4 md:mb-20 mb-28'
+      py-4 md:mb-20 mb-40'
     >
       <a 
         href="/"
@@ -34,6 +35,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
+      <MobileNav />
     </nav>
   )
 }
