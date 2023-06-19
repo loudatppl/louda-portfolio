@@ -17,8 +17,8 @@ const Nav = () => {
       </a>
       <div>
         <ul
-          className='md:flex space-x-8 text-sm
-          font-ppbook text-dblack hidden'
+          className='md:flex space-x-8 text-base
+          font-oswald text-dblack hidden'
         >
           <li>
             <a href="/">HOME</a>

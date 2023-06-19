@@ -17,7 +17,6 @@ export default {
       },
 
       fontFamily: {
-        'ppbook' : 'PP-NEUE-MONTREAL-BOOK',
         'ppbold' : 'PP-NEUE-MONTREAL-BOLD',
         'blond' : 'BLOND',
         'oswald' : 'OSWALD',
