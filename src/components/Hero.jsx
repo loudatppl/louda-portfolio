@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
         id='home'
-        className='w-full relative mt-2 text-dblack
+        className='w-full relative mt-0 text-dblack
         mb-20'
     >
         <div
@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div
             className='absolute md:top-[30%] 
-            md:left-[43.8%] mt-20 top-[45%]'
+            md:left-[43.8%] mt-20 top-[50%]'
         >
             <div
                 className='flex flex-col items-start
