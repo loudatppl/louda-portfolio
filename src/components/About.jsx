@@ -5,7 +5,8 @@ const About = () => {
     <section
         id='about'
         className='md:px-20 md:py-20
-        px-10 py-20 flex flex-col space-y-20'
+        px-10 py-20 flex flex-col space-y-20
+        text-dblack'
     >
         <div
             className='flex justify-between'
@@ -73,7 +74,7 @@ const About = () => {
                     className='pl-10 font-open flex justify-between'
                 >
                     <div>
-                        <h3 className='text-xl mb-6'>FRONT-END</h3>
+                        <h3 className='text-xl mb-6 font-ppbold'>FRONT-END</h3>
                         <ul className=' space-y-2 text-base'>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -82,8 +83,10 @@ const About = () => {
                             <li>TAILWIND</li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 className='text-xl mb-6'>BACK-END</h3>
+                    <div
+                        className='flex flex-col'
+                    >
+                        <h3 className='text-xl mb-6 font-ppbold'>BACK-END</h3>
                         <ul className='space-y-2 text-base'>
                             <li>NODE.JS</li>
                             <li>EXPRESS.JS</li>
@@ -98,6 +101,57 @@ const About = () => {
                 </div>
             </div>
         </div>
+        <div
+            className='flex justify-between'
+        >
+            <div
+                className='space-y-10 md:w-[50%]
+                w-full'
+            >
+                <h2
+                    className='md:text-4xl font-oswald
+                    text-2xl'
+                >
+                    my experience
+                </h2>
+                <div
+                    className='pl-10 font-open'
+                >
+                    <h3
+                        className='text-xl font-ppbold'
+                    >
+                        Uplift Code Camp
+                    </h3>
+                    <p
+                        className='text-sm text-ppbook
+                        mb-4'
+                    >
+                        January 2023 - June 2023
+                    </p>
+                    <p
+                        
+                    >
+                        During this immersive course, I learned the skills and technologies required to become a proficient 
+                        <br />
+                        Full-Stack Web Developer. The bootcamp covered front-end and back-end develpment, including HTML, CSS,
+                        <br />
+                        Javascript, Node.js, Express.js, and MongoDB.
+                        <br />
+                        <br />
+
+                        Through my experience at Uplift Code Camp, I not only expanded my technical skill set but also developed
+                        <br />
+                        crucial teamwork and communication abilities. The combination of hands-on project work, Git version control
+                        <br />
+                        utilization, and active collaboration provided me with a solid foundation for effective web development practices
+                        in a collaborative setting
+                        
+                    </p>
+                </div>
+            </div>
+            <div className='hidden md:block'></div>
+        </div>
+
     </section>
   )
 }
