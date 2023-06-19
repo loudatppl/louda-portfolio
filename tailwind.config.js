@@ -13,7 +13,8 @@ export default {
         'taupe' : '#A89985',
         'mocha' : '#7E685C',
         'dbrown' : '#4F3B31',
-        'dblack' : '#1a1a1a'
+        'dblack' : '#1a1a1a',
+        'dgreen' : '#49986b'
       },
 
       fontFamily: {

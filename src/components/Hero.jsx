@@ -20,8 +20,8 @@ const Hero = () => {
 
         </div>
         <div
-            className='md:absolute md:top-[30%] 
-            md:left-[43.8%] mt-20'
+            className='absolute md:top-[30%] 
+            md:left-[43.8%] mt-20 top-[50%]'
         >
             <div
                 className='flex flex-col items-start

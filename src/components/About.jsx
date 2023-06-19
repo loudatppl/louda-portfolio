@@ -76,6 +76,7 @@ const About = () => {
                     <div>
                         <h3 className='text-xl mb-6 font-oswald'>FRONT-END</h3>
                         <ul className=' space-y-2 text-base'>
+                            <li>GIT</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JAVASCRIPT</li>
