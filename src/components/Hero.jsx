@@ -36,7 +36,7 @@ const Hero = () => {
 
                 <h2
                     className='font-open mr-20 md:text-xl 
-                    text-base md:mt-10 mt-8'
+                    text-lg md:mt-10 mt-8'
                 >
                     WEB DEVELOPER
                 </h2>
