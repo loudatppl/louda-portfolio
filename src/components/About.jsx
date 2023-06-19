@@ -6,7 +6,7 @@ const About = () => {
         id='about'
         className='md:px-20 md:py-20
         px-10 py-20 flex flex-col space-y-20
-        text-dblack mb-20'
+        text-dblack mb-20 md:mt-0 mt-60'
     >
         <div
             className='flex justify-between'
