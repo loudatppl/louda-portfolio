@@ -13,11 +13,6 @@ body {
 
 
 @font-face {
-    font-family: 'PP-NEUE-MONTREAL-BOOK';
-    src: url('../fonts/PPNeueMontreal-Book.otf');
-}
-
-@font-face {
     font-family: 'PP-NEUE-MONTREAL-BOLD';
     src: url('../fonts/PPNeueMontreal-Bold.otf');
 }
