@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link, useLocation } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 
 const Tabs = () => {
     const location = useLocation();
@@ -14,11 +14,12 @@ const Tabs = () => {
             className='w-[768px]'
         >
             <ul
-                className='flex text-dgray font-rroboto'
+                className='flex text-dgray font-rroboto
+                md:text-base text-sm'
             >
                 <li
                     className='w-1/4 text-center
-                    py-4 hover:bg-lgray transition-colors
+                    py-4 md:hover:bg-lgray transition-colors
                     duration-300'
                     
                 >
@@ -26,7 +27,7 @@ const Tabs = () => {
                         to='/'
                         className={`${ 
                             location.pathname === '/' 
-                            ? 'border-b-4 border-dgreen px-2 py-1' : ''
+                            ? 'border-b-4 border-dgreen px-2 py-1 text-dblack font-broboto' : ''
                         }`}
                     >
                         Posts
@@ -34,14 +35,14 @@ const Tabs = () => {
                 </li>
                 <li
                     className='w-1/4 text-center
-                    py-4 hover:bg-lgray transition-colors
+                    py-4 md:hover:bg-lgray transition-colors
                     duration-300'
                 >
                     <Link 
                         to='/about'
                         className={`${ 
                             location.pathname === '/about' 
-                            ? 'border-b-4 border-dgreen px-2 py-1' : ''
+                            ? 'border-b-4 border-dgreen px-2 py-1 text-dblack font-broboto' : ''
                         }`}
                     >
                         About
@@ -49,14 +50,14 @@ const Tabs = () => {
                 </li>
                 <li
                     className='w-1/4 text-center
-                    py-4 hover:bg-lgray transition-colors
+                    py-4 md:hover:bg-lgray transition-colors
                     duration-300'
                 >
                     <Link 
                         to='/projects'
                         className={`${ 
                             location.pathname === '/projects' 
-                            ? 'border-b-4 border-dgreen px-2 py-1' : ''
+                            ? 'border-b-4 border-dgreen px-2 py-1 text-dblack font-broboto' : ''
                         }`}
                     >
                         Projects
@@ -64,14 +65,14 @@ const Tabs = () => {
                 </li>
                 <li
                     className='w-1/4 text-center
-                    py-4 hover:bg-lgray transition-colors
+                    py-4 md:hover:bg-lgray transition-colors
                     duration-100'
                 >
                     <Link 
                         to='/contact'
                         className={`${ 
                             location.pathname === '/contact' 
-                            ? 'border-b-4 border-dgreen px-2 py-1' : ''
+                            ? 'border-b-4 border-dgreen px-2 py-1 text-dblack font-broboto' : ''
                         }`}
                     >
                         Contact
