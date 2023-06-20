@@ -8,7 +8,7 @@ import {
   MdCalendarMonth,
 } from 'react-icons/md'
 
-import whiteFerrari from '../assets/images/ferrari.jpg'
+import whiteFerrari from '../assets/images/white-ferrari.jpg'
 import profile from '../assets/images/profile.jpg'
 
 
@@ -30,7 +30,7 @@ const Profile = () => {
   return (
     <section
       className='w-full flex justify-center
-      mt-[44px] text-chirp text-dblack'
+      mt-[60px] text-chirp text-dblack'
     >
       <div
         className='flex flex-col
@@ -46,7 +46,7 @@ const Profile = () => {
           />
         </div>
         <div
-          className='flex flex-col px-4 space-y-2'
+          className='flex flex-col px-4 space-y-4'
         >
           <div
             className='relative w-full md:h-[72px] h-[36px]
@@ -55,7 +55,7 @@ const Profile = () => {
             <div
               className='md:w-36 absolute top-0 left-0
               rounded-[50%] md:p-1 transform -translate-y-1/2
-              bg-dwhite w-20 p-[2px]'
+              bg-dwhite w-24 p-[2px]'
             >
               <img 
                 src={profile} 
@@ -65,19 +65,18 @@ const Profile = () => {
             </div>
             <div
               className='rounded-[50%] p-2 border
-              border-lgray cursor-pointer self-start
-              md:self-auto md:mt-0 mt-2'
+              border-lgray cursor-pointer md:mt-0
+              mt-4'
             >
               <FiMail size={18} />
             </div>
             <div
               className='bg-dgreen px-4
-              rounded-2xl py-1 self-start
-              md:self-auto md:mt-0 mt-2'
+              rounded-2xl py-1 md:mt-0 mt-4'
             >
               <p 
-                className='md:text-base font-broboto
-                text-dwhite text-sm cursor-pointer'
+                className='text-base font-broboto
+                text-dwhite cursor-pointer'
                 onClick={handleFollow}
               >
                 {following}
@@ -86,9 +85,9 @@ const Profile = () => {
           </div>
           <div>
             <h2
-              className='md:text-xl font-robotob
+              className='text-xl font-robotob
               font-black cursor-pointer flex 
-              items-center text-lg'
+              items-center'
             >
               Loudakris Tuppal
               <span
@@ -99,25 +98,26 @@ const Profile = () => {
             </h2>
             <p
               className='font-rroboto text-dgray
-              md:text-base cursor-pointer text-sm'
+              text-base cursor-pointer'
             >
               @loudatuppal
             </p>
           </div>
           <div
-            className='flex md:text-base font-rroboto
-            text-dgray flex-wrap text-sm'
+            className='flex text-base font-rroboto
+            text-dgray flex-wrap'
           >
             <div
               className='flex items-center
-              space-x-1 cursor-pointer mr-4'
+              space-x-1 cursor-pointer mr-4 mb-0'
             >
               <MdWorkOutline size={20} /> 
               <p>Web Developer</p>
             </div>
             <div
               className='flex items-center
-              space-x-1 cursor-pointer mr-4'
+              space-x-1 cursor-pointer mr-4 mb-1
+              md:mb-0'
             >
               < MdOutlineLocationOn size={20} />
               <p>Manila, Philippines</p>
@@ -131,8 +131,8 @@ const Profile = () => {
             </div>
           </div>
           <div
-            className='flex space-x-4 md:text-base
-            text-dblack font-rroboto text-sm'
+            className='flex space-x-4 text-base
+            text-dblack font-rroboto'
           >
             <p
               className='font-bold'
