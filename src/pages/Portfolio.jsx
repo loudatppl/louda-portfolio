@@ -7,8 +7,10 @@ import Posts from '../components/Posts'
 import About from '../components/About'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 import { Route, Routes, Router } from 'react-router'
+
 
 
 const Portfolio = () => {
@@ -27,6 +29,7 @@ const Portfolio = () => {
                 <Route path='/contact' element={<Contact />} />
             </Routes>
         </main>
+        <Footer />
     </>
   )
 }

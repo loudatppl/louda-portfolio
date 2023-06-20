@@ -15,7 +15,7 @@ const Tabs = () => {
         >
             <ul
                 className='flex text-dgray font-rroboto
-                text-base'
+                md:text-base text-sm'
             >
                 <li
                     className='w-1/4 text-center

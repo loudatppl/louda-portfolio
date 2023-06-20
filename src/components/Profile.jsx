@@ -85,15 +85,16 @@ const Profile = () => {
           </div>
           <div>
             <h2
-              className='text-xl font-robotob
+              className='md:text-3xl font-robotob
               font-black cursor-pointer flex 
-              items-center'
+              items-center text-xl'
             >
               Loudakris Tuppal
               <span
                 className='ml-1 text-dgreen'
               >
-                <MdVerified size={20} /> 
+                <MdVerified className='md:block hidden' size={30} />
+                <MdVerified className='md:hidden' size={26} />  
               </span>
             </h2>
             <p
@@ -104,8 +105,8 @@ const Profile = () => {
             </p>
           </div>
           <div
-            className='flex text-base font-rroboto
-            text-dgray flex-wrap'
+            className='flex md:text-base font-rroboto
+            text-dgray flex-wrap text-sm'
           >
             <div
               className='flex items-center
@@ -131,8 +132,8 @@ const Profile = () => {
             </div>
           </div>
           <div
-            className='flex space-x-4 text-base
-            text-dblack font-rroboto'
+            className='flex space-x-4 md:text-base
+            text-dblack font-rroboto text-sm'
           >
             <p
               className='font-bold'
