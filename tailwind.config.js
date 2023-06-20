@@ -8,20 +8,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        'beige' : '#F8F2E9',
-        'sand' : '#E4DCCB',
-        'taupe' : '#A89985',
-        'mocha' : '#7E685C',
-        'dbrown' : '#4F3B31',
-        'dblack' : '#1a1a1a',
+        'dwhite' : '#f9f9f9',
+        'dblack' : '#2d2e32',
+        'lgray' : '#d3d3d3',
+        'dgray' : '#63666a',
         'dgreen' : '#49986b'
+
       },
 
       fontFamily: {
-        'ppbold' : 'PP-NEUE-MONTREAL-BOLD',
         'blond' : 'BLOND',
-        'oswald' : 'OSWALD',
-        'open' : 'OPEN-SANS'
+        'rroboto' : 'ROBOTO-REGULAR',
+        'broboto' : 'ROBOTO-BOLD',
+        'robotob' : 'ROBOTO-BLACK'
       }
     },
   },

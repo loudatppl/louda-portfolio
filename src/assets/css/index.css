@@ -4,11 +4,7 @@
 
 
 body {
-    background: #F8F2E9;
-    /* background-image: url('../images/noise.svg');
-    height: 100vh; */
-    padding: 0;
-    margin: 0;
+    background: #f9f9f9;
 }
 
 .overflow-hidden {
@@ -17,22 +13,22 @@ body {
 
 
 @font-face {
-    font-family: 'PP-NEUE-MONTREAL-BOLD';
-    src: url('../fonts/PPNeueMontreal-Bold.otf');
-}
-
-@font-face {
     font-family: 'BLOND';
     src: url('../fonts/blonde.otf');
 }
 
 @font-face {
-    font-family: 'OSWALD';
-    src: url('../fonts/Oswald-Regular.ttf');
+    font-family: 'ROBOTO-REGULAR';
+    src: url('../fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'OPEN-SANS';
-    src: url('../fonts/OpenSans-Light.ttf');
+    font-family: 'ROBOTO-BOLD';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'ROBOTO-BLACK';
+    src: url('../fonts/Roboto-Black.ttf');
 }
 

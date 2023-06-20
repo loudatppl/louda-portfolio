@@ -1,40 +1,17 @@
 import React from 'react'
-import MobileNav from './MobileNav'
 
 const Nav = () => {
   return (
     <nav
-      className='flex top-0
-      left-0 right-0 md:px-20 md:py-6
-      justify-between items-center px-10
-      py-4 md:mb-20 mb-36 relative'
+        className='fixed top-0 left-0 right-0
+        md:px-4 md:py-2 text-dblack bg-dwhite
+        bg-opacity-30 backdrop-blur-lg'
     >
-      <a 
-        href="/"
-        className='font-blond text-dblack
-        text-xl z-[9999]'
-      >
-        louda
-      </a>
-      <div>
-        <ul
-          className='md:flex space-x-8 text-base
-          font-oswald text-dblack hidden'
+        <h1
+            className='text-lg font-blond'
         >
-          <li>
-            <a href="/">HOME</a>
-          </li>
-          <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#work">WORK</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+            louda
+        </h1>
     </nav>
   )
 }
