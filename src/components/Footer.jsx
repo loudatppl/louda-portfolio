@@ -5,7 +5,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer
-        className='w-full flex justify-center py-20 text-dblack'
+        className='w-full flex justify-center py-10 text-dblack'
     >
         <div
             className='flex flex-col w-[768px] px-4 space-y-4'

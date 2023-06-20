@@ -35,7 +35,7 @@ const Posts = () => {
                         className='flex space-x-1 mb-2'
                     >
                         <h2
-                            className='font-robotob flex text-lg'
+                            className='font-robotob flex text-lg items-center'
                         >
                             Loudakris Tuppal
                             <span
@@ -45,9 +45,9 @@ const Posts = () => {
                                 <MdVerified className='md:hidden' size={20} />  
                             </span>
                         </h2>
-                        <p>@loudatuppal</p>
-                        <p>·</p>
-                        <p>6/20/23</p>
+                        <p className='flex items-center'>@loudatuppal</p>
+                        <p className='flex items-center'>·</p>
+                        <p className='flex items-center'>6/20/23</p>
                     </div>
                     <div>
                         <p
