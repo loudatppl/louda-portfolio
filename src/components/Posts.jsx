@@ -1,7 +1,7 @@
 import React from "react";
 
 import profile from "../assets/images/profile.jpg";
-import thankYou from "../assets/images/giphy.gif";
+import hello from "../assets/images/hello.gif";
 
 import { MdVerified } from "react-icons/md";
 
@@ -39,26 +39,17 @@ const Posts = () => {
               </div>
             </div>
             <div className="text-dblack md:text-base text-sm mb-2">
-              <p>
-                Thank you for visiting my portfolio, and i hope you enjoy
-                exploring my work. If you have any questions or would like to
-                discuss potential collaborations, please don't hesitate to get
-                in touch.
-              </p>
+              <p>Hey, I'm Louda. Welcome to my portfolio!</p>
               <p className="text-hash">
                 <br />
-                #thankyou
+                #hello
               </p>
             </div>
             <div
               className="border border-lgray w-full
                         rounded-lg"
             >
-              <img
-                src={thankYou}
-                alt="Thank You"
-                className="rounded-lg w-full"
-              />
+              <img src={hello} alt="Thank You" className="rounded-lg w-full" />
             </div>
           </div>
         </div>

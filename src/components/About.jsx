@@ -164,7 +164,7 @@ const About = () => {
                 >
                   <p>@loudatppl</p>
                   <p>·</p>
-                  <p>6/22/23</p>
+                  <p>6/23/23</p>
                 </div>
               </div>
             </div>
@@ -181,11 +181,6 @@ const About = () => {
                 >
                   @upliftcodecamp
                 </a>
-                , a coding bootcamp that helps aspiring web developers propel
-                into the world of tech. Uplift Code Camp provides a
-                comprehensive curriculum that guides students towards mastering
-                the MERN stack, enabling them to gain proficiency in both
-                front-end and back-end development.
                 <br />
                 <br />
                 During my time at Uplift Code Camp, I had the opportunity to

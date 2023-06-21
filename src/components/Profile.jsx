@@ -1,82 +1,74 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import { FiMail } from 'react-icons/fi'
-import { 
-  MdVerified, 
+import { FiMail } from "react-icons/fi";
+import {
+  MdVerified,
   MdWorkOutline,
-  MdOutlineLocationOn, 
+  MdOutlineLocationOn,
   MdCalendarMonth,
-} from 'react-icons/md'
+} from "react-icons/md";
 
-import whiteFerrari from '../assets/images/white-ferrari.jpg'
-import profile from '../assets/images/profile.jpg'
-
+import whiteFerrari from "../assets/images/white-ferrari.jpg";
+import profile from "../assets/images/profile.jpg";
 
 const Profile = () => {
-  const [following, setFollowing] = useState( 'Follow' )
-  const [followerCount, setFollowerCount] = useState( 7.9 )
+  const [following, setFollowing] = useState("Follow");
+  const [followerCount, setFollowerCount] = useState(7.9);
 
   const handleFollow = () => {
-    if (following === 'Follow') {
-      setFollowing( 'Unfollow' )
-      setFollowerCount(followerCount + 0.1)
+    if (following === "Follow") {
+      setFollowing("Unfollow");
+      setFollowerCount(followerCount + 0.1);
     } else {
-      setFollowing( 'Follow' )
-      setFollowerCount( followerCount - 0.1 )
+      setFollowing("Follow");
+      setFollowerCount(followerCount - 0.1);
     }
-    
-  }
+  };
 
   return (
     <section
-      className='w-full flex justify-center
-      mt-[60px] text-chirp text-dblack'
+      className="w-full flex justify-center
+      mt-[60px] text-chirp text-dblack"
     >
       <div
-        className='flex flex-col
-        justify-center'
+        className="flex flex-col
+        justify-center"
       >
-        <div
-          className='w-auto'
-        >
-          <img 
-            src={whiteFerrari} 
-            alt="White Ferrari" 
-            className='w-[768px]'
-          />
+        <div className="w-auto">
+          <img src={whiteFerrari} alt="White Ferrari" className="w-[768px]" />
         </div>
-        <div
-          className='flex flex-col px-4 space-y-4'
-        >
+        <div className="flex flex-col px-4 space-y-4">
           <div
-            className='relative w-full md:h-[72px] h-[36px]
-            flex justify-end items-center space-x-4'
+            className="relative w-full md:h-[72px] h-[36px]
+            flex justify-end items-center space-x-4"
           >
             <div
-              className='md:w-36 absolute top-0 left-0
+              className="md:w-36 absolute top-0 left-0
               rounded-[50%] md:p-1 transform -translate-y-1/2
-              bg-dwhite w-24 p-[2px]'
+              bg-dwhite w-24 p-[2px]"
             >
-              <img 
-                src={profile} 
-                alt="default profile" 
-                className='rounded-[50%]'
+              <img
+                src={profile}
+                alt="default profile"
+                className="rounded-[50%]"
               />
             </div>
             <div
-              className='rounded-[50%] p-2 border
+              className="rounded-[50%] p-2 border
               border-lgray cursor-pointer md:mt-0
-              mt-4'
+              mt-4"
             >
-              <FiMail size={18} />
+              <a href="mailto:tuppalloudakrisa@gmail.com">
+                <FiMail size={18} />
+              </a>
             </div>
             <div
-              className='bg-dgreen px-4
-              rounded-2xl py-1 md:mt-0 mt-4'
+              className="bg-dgreen px-4
+              rounded-2xl py-1 md:mt-0 mt-4"
             >
-              <p 
-                className='text-base font-broboto
-                text-dwhite cursor-pointer'
+              <p
+                className="text-base font-broboto
+                text-dwhite cursor-pointer"
                 onClick={handleFollow}
               >
                 {following}
@@ -85,72 +77,66 @@ const Profile = () => {
           </div>
           <div>
             <h2
-              className='md:text-3xl font-robotob
+              className="md:text-3xl font-robotob
               font-black cursor-pointer flex 
-              items-center text-xl'
+              items-center text-xl"
             >
               Loudakris Tuppal
-              <span
-                className='ml-1 text-dgreen'
-              >
-                <MdVerified className='md:block hidden' size={30} />
-                <MdVerified className='md:hidden' size={26} />  
+              <span className="ml-1 text-dgreen">
+                <MdVerified className="md:block hidden" size={30} />
+                <MdVerified className="md:hidden" size={26} />
               </span>
             </h2>
             <p
-              className='font-rroboto text-dgray
-              text-base cursor-pointer'
+              className="font-rroboto text-dgray
+              text-base cursor-pointer"
             >
               @loudatuppal
             </p>
           </div>
           <div
-            className='flex md:text-base font-rroboto
-            text-dgray flex-wrap text-sm'
+            className="flex md:text-base font-rroboto
+            text-dgray flex-wrap text-sm"
           >
             <div
-              className='flex items-center
-              space-x-1 cursor-pointer mr-4 mb-0'
+              className="flex items-center
+              space-x-1 cursor-pointer mr-4 mb-0"
             >
-              <MdWorkOutline size={20} /> 
+              <MdWorkOutline size={20} />
               <p>Web Developer</p>
             </div>
             <div
-              className='flex items-center
+              className="flex items-center
               space-x-1 cursor-pointer mr-4 mb-1
-              md:mb-0'
+              md:mb-0"
             >
-              < MdOutlineLocationOn size={20} />
+              <MdOutlineLocationOn size={20} />
               <p>Manila, Philippines</p>
             </div>
             <div
-              className='flex items-center
-              space-x-1 cursor-pointer mr-4'
+              className="flex items-center
+              space-x-1 cursor-pointer mr-4"
             >
-              < MdCalendarMonth size={20} />
+              <MdCalendarMonth size={20} />
               <p>Joined June 2023</p>
             </div>
           </div>
           <div
-            className='flex space-x-4 md:text-base
-            text-dblack font-rroboto text-sm'
+            className="flex space-x-4 md:text-base
+            text-dblack font-rroboto text-sm"
           >
-            <p
-              className='font-bold'
-            >
-              0 <span className='text-dgray font-normal'> Following</span>
+            <p className="font-bold">
+              0 <span className="text-dgray font-normal"> Following</span>
             </p>
-            <p
-              className='font-bold'
-            >
+            <p className="font-bold">
               {`${followerCount}B`}
-              <span className='text-dgray font-normal'> Followers</span>
+              <span className="text-dgray font-normal"> Followers</span>
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
