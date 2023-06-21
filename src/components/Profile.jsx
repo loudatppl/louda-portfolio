@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import { FiMail } from 'react-icons/fi'
 import { 
   MdVerified, 
-  MdWorkOutline, 
-  MdOutlineLocationOn,
+  MdWorkOutline,
+  MdOutlineLocationOn, 
   MdCalendarMonth,
 } from 'react-icons/md'
 

@@ -21,7 +21,7 @@ const Footer = () => {
                 className='flex justify-center'
             >
                 <p
-                    className='text-sm cursor-pointer'
+                    className='md:text-sm text-xs cursor-pointer'
                 >LOUDAKRIS TUPPAL &copy; 2023</p>
             </div>
         </div>

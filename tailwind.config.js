@@ -12,7 +12,8 @@ export default {
         'dblack' : '#2d2e32',
         'lgray' : '#d3d3d3',
         'dgray' : '#63666a',
-        'dgreen' : '#49986b'
+        'dgreen' : '#49986b',
+        'hash' : '#00acee'
 
       },
 

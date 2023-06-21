@@ -1,72 +1,83 @@
 import React from 'react'
 
-import { MdVerified } from 'react-icons/md'
-
 import profile from '../assets/images/profile.jpg'
 import thankYou from '../assets/images/giphy.gif'
+
+import { MdVerified } from 'react-icons/md'
 
 const Posts = () => {
   return (
     <section
-        className='w-full flex justify-center
-        mt-10'
+        className='w-full flex justify-center py-10'
     >
         <div
-            className='flex flex-col w-[768px]
-            px-4'
+            className='w-[768px] flex flex-col px-4'
         >
             <div
-                className='flex font-rroboto text-dblack
-                flex-row'
+                className='flex flex-row space-x-2'
             >
                 <div
-                    className='mr-2 items-center'
+                    className='md:w-[5%] w-[10%]'
                 >
                     <img 
                         src={profile} 
-                        alt="profile"
-                        className='md:w-20 w-32 rounded-[50%]' 
+                        alt="profile" 
+                        className='rounded-[50%] w-10'
                     />
                 </div>
                 <div
-                    className='flex flex-col'
+                    className='md:w-[95%] w-[90%] flex-col justify-start'
                 >
                     <div
-                        className='flex space-x-1 mb-2'
+                        className='flex md:text-base font-rroboto text-dblack
+                        items-start text-sm'
                     >
-                        <h2
-                            className='font-robotob flex text-lg items-center'
+                        <div
+                            className='flex items-center space-x-1'
                         >
-                            Loudakris Tuppal
-                            <span
-                                className='ml-1 text-dgreen'
+                            <h2
+                                className='flex items-center md:text-lg font font-broboto
+                                text-base'
                             >
-                                <MdVerified className='md:block hidden' size={24} />
-                                <MdVerified className='md:hidden' size={20} />  
-                            </span>
-                        </h2>
-                        <p className='flex items-center'>@loudatuppal</p>
-                        <p className='flex items-center'>·</p>
-                        <p className='flex items-center'>6/20/23</p>
+                                Loudakris Tuppal
+                                <span className='ml-1 text-dgreen'><MdVerified /></span>
+                            </h2>
+                            <div
+                                className='flex items-center space-x-1
+                                text-dgray'
+                            >
+                                <p>@loudatppl</p>
+                                <p>·</p>
+                                <p>6/21/23</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p
-                            className='mb-4 text-base font-rroboto'
-                        >
+                    <div
+                        className='text-dblack md:text-base text-sm
+                        mb-2'
+                    >
+                        <p>
                             Thank you for visiting my portfolio, and i hope
                             you enjoy exploring my work. If you have any questions
                             or would like to discuss potential collaborations,
                             please don't hesitate to get in touch.
                         </p>
-                        <div
-                            className='border rounded-lg border-lgray'
+                        <p
+                            className='text-hash'
                         >
-                            <img 
-                                src={thankYou} 
-                                alt="Thank You" 
-                                className='w-full h-full rounded-lg'
-                            />
-                        </div>
+                            <br />
+                            #thankyou
+                        </p>
+                    </div>
+                    <div
+                        className='border border-lgray w-full
+                        rounded-lg'
+                    >
+                        <img 
+                            src={thankYou} 
+                            alt="Thank You" 
+                            className='rounded-lg w-full'
+                        />
                     </div>
                 </div>
             </div>

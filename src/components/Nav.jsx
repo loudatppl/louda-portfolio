@@ -10,7 +10,7 @@ const Nav = () => {
     >
         <h1
             className='md:text-lg font-blond
-            text-base text-dgreen'
+            text-base text-dblack'
         >
             louda
         </h1>
