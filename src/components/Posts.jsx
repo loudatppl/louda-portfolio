@@ -39,7 +39,7 @@ const Posts = () => {
               </div>
             </div>
             <div className="text-dblack md:text-base text-sm mb-2">
-              <p>Hey, I'm Louda. Welcome to my portfolio!</p>
+              <p>Hey, I'm Louda. Welcome to my web portfolio!</p>
               <p className="text-hash">
                 <br />
                 #hello
