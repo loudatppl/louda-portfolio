@@ -109,7 +109,7 @@ const About = () => {
               mb-2"
             >
               <p>
-                These are technologies I use
+                These are the technologies I use
                 <br />
                 <br />
                 For front-end development:
@@ -117,8 +117,8 @@ const About = () => {
                 JavaScript, Tailwind, and React.
                 <br />
                 <br />
-                For back-end:
-                <br />I have a common knowledge of MongoDB, Express.js, and
+                For back-end development:
+                <br />I have common knowledge of MongoDB, Express.js, and
                 Node.js.
               </p>
               <p className="text-hash">
