@@ -8,12 +8,14 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
 
 import { Route, Routes } from "react-router";
 
 const App = () => {
   return (
     <>
+      <Preloader />
       <header>
         <Nav />
         <Profile />
