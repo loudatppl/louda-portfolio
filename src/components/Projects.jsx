@@ -183,7 +183,11 @@ const Projects = () => {
                 <br />
                 Although it's work in progress you can checkout the initial
                 features at{" "}
-                <a href="/projects" target="_blank" className="text-hash">
+                <a
+                  href="/https://calikan-app.vercel.app/"
+                  target="_blank"
+                  className="text-hash"
+                >
                   CaliKan
                 </a>{" "}
                 and view the source code at{" "}
@@ -192,7 +196,7 @@ const Projects = () => {
                   target="_blank"
                   className="text-hash"
                 >
-                  github/edsa-js
+                  github/calikan
                 </a>
                 .
               </p>
