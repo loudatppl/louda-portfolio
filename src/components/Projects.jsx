@@ -55,7 +55,16 @@ const Projects = () => {
                   className="text-hash"
                 >
                   EdsaJS
+                </a>{" "}
+                and view the source code at{" "}
+                <a
+                  href="https://github.com/loudatppl/edsa-js"
+                  target="_blank"
+                  className="text-hash"
+                >
+                  github/edsa-js
                 </a>
+                .
               </p>
               <p className="text-hash">
                 <br />
@@ -176,7 +185,16 @@ const Projects = () => {
                 features at{" "}
                 <a href="/projects" target="_blank" className="text-hash">
                   CaliKan
+                </a>{" "}
+                and view the source code at{" "}
+                <a
+                  href="https://github.com/loudatppl/calikan"
+                  target="_blank"
+                  className="text-hash"
+                >
+                  github/edsa-js
                 </a>
+                .
               </p>
               <p className="text-hash">
                 <br />
