@@ -127,6 +127,14 @@ const Projects = () => {
                   className="text-hash"
                 >
                   Connectify
+                </a>{" "}
+                and view the source code at{" "}
+                <a
+                  href="https://github.com/loudatppl/connectify"
+                  target="_blank"
+                  className="text-hash"
+                >
+                  github/connectify
                 </a>
               </p>
               <p className="text-hash">
@@ -184,7 +192,7 @@ const Projects = () => {
                 Although it's work in progress you can checkout the initial
                 features at{" "}
                 <a
-                  href="/https://calikan-app.vercel.app/"
+                  href="https://calikan-app.vercel.app/"
                   target="_blank"
                   className="text-hash"
                 >
